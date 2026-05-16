@@ -1,0 +1,692 @@
+{
+  "freeTextAnnotations": [
+    {
+      "id": "freeText_1763090790146_0",
+      "text": "AS5",
+      "position": {
+        "x": 85.46506515223031,
+        "y": -50.78464518422668
+      },
+      "fontSize": 10,
+      "fontColor": "#fe0101",
+      "backgroundColor": "transparent",
+      "fontWeight": "normal",
+      "fontStyle": "normal",
+      "textDecoration": "none",
+      "fontFamily": "monospace"
+    }
+  ],
+  "freeShapeAnnotations": [],
+  "trafficRateAnnotations": [],
+  "groupStyleAnnotations": [
+    {
+      "id": "group-1",
+      "name": "AS 5",
+      "level": "1",
+      "position": {
+        "x": -5.55270675583904,
+        "y": -93.0920002922094
+      },
+      "width": 176,
+      "height": 139,
+      "backgroundColor": "rgba(100, 100, 255, 0.1)",
+      "borderColor": "#ff0000",
+      "borderWidth": 2,
+      "borderStyle": "dashed",
+      "borderRadius": 8,
+      "labelColor": "#ff0000",
+      "zIndex": -1
+    },
+    {
+      "id": "group-2",
+      "name": "AS 6",
+      "level": "1",
+      "position": {
+        "x": 297.49874038386156,
+        "y": -90.57316924153545
+      },
+      "width": 207,
+      "height": 129,
+      "backgroundColor": "rgba(100, 100, 255, 0.1)",
+      "borderColor": "#ff0000",
+      "borderWidth": 2,
+      "borderStyle": "dashed",
+      "borderRadius": 8,
+      "labelColor": "#ff0000",
+      "zIndex": -1
+    },
+    {
+      "id": "group-3",
+      "name": "AS 1",
+      "level": "1",
+      "position": {
+        "x": -87.10417558881932,
+        "y": 84.90600222529021
+      },
+      "width": 320,
+      "height": 200,
+      "backgroundColor": "rgba(100, 100, 255, 0.1)",
+      "borderColor": "#ff0000",
+      "borderWidth": 2,
+      "borderStyle": "dashed",
+      "borderRadius": 8,
+      "labelColor": "#ff0000",
+      "zIndex": -1
+    },
+    {
+      "id": "group-4",
+      "name": "AS 2",
+      "level": "1",
+      "position": {
+        "x": 320.69830446129515,
+        "y": 96.00681893840627
+      },
+      "width": 220,
+      "height": 120,
+      "backgroundColor": "rgba(100, 100, 255, 0.1)",
+      "borderColor": "#ff0000",
+      "borderWidth": 2,
+      "borderStyle": "dashed",
+      "borderRadius": 8,
+      "labelColor": "#ff0000",
+      "zIndex": -1
+    },
+    {
+      "id": "group-5",
+      "name": "AS 7",
+      "level": "1",
+      "position": {
+        "x": -104.4897324535916,
+        "y": 336.7530079854656
+      },
+      "width": 200,
+      "height": 120,
+      "backgroundColor": "rgba(100, 100, 255, 0.1)",
+      "borderColor": "#ff0000",
+      "borderWidth": 2,
+      "borderStyle": "dashed",
+      "borderRadius": 8,
+      "labelColor": "#ff0000",
+      "zIndex": -1
+    },
+    {
+      "id": "group-6",
+      "name": "AS 3",
+      "level": "1",
+      "position": {
+        "x": 176.94273356623677,
+        "y": 348.9482595951457
+      },
+      "width": 180,
+      "height": 120,
+      "backgroundColor": "rgba(100, 100, 255, 0.1)",
+      "borderColor": "#ff0000",
+      "borderWidth": 2,
+      "borderStyle": "dashed",
+      "borderRadius": 8,
+      "labelColor": "#ff0000",
+      "zIndex": -1
+    },
+    {
+      "id": "group-7",
+      "name": "AS 4",
+      "level": "1",
+      "position": {
+        "x": 403.7493869142303,
+        "y": 273.70084891482253
+      },
+      "width": 220,
+      "height": 120,
+      "backgroundColor": "rgba(100, 100, 255, 0.1)",
+      "borderColor": "#ff0000",
+      "borderWidth": 2,
+      "borderStyle": "dashed",
+      "borderRadius": 8,
+      "labelColor": "#ff0000",
+      "zIndex": -1
+    },
+    {
+      "id": "group-8",
+      "name": "AS 8",
+      "level": "1",
+      "position": {
+        "x": 275.248671553083,
+        "y": 513.4752196452654
+      },
+      "width": 200,
+      "height": 120,
+      "backgroundColor": "rgba(100, 100, 255, 0.1)",
+      "borderColor": "#ff0000",
+      "borderWidth": 2,
+      "borderStyle": "dashed",
+      "borderRadius": 8,
+      "labelColor": "#ff0000",
+      "zIndex": -1
+    },
+    {
+      "id": "group-9",
+      "name": "AS 9",
+      "level": "1",
+      "position": {
+        "x": 3.5082015802024387,
+        "y": 513.8075689571692
+      },
+      "width": 200,
+      "height": 120,
+      "backgroundColor": "rgba(100, 100, 255, 0.1)",
+      "borderColor": "#ff0000",
+      "borderWidth": 2,
+      "borderStyle": "dashed",
+      "borderRadius": 8,
+      "labelColor": "#ff0000",
+      "zIndex": -1
+    },
+    {
+      "id": "group-10",
+      "name": "AS100 Corp A - Remote Office",
+      "level": "1",
+      "position": {
+        "x": -289.4211017218026,
+        "y": 642.065826291352
+      },
+      "width": 220,
+      "height": 260,
+      "backgroundColor": "rgba(100, 100, 255, 0.1)",
+      "borderColor": "#bbbebf",
+      "borderWidth": 2,
+      "borderStyle": "dashed",
+      "borderRadius": 8,
+      "zIndex": -1
+    },
+    {
+      "id": "group-11",
+      "name": "AS100 Corp A - Headquarter",
+      "level": "1",
+      "position": {
+        "x": 7.9286233840927025,
+        "y": 682.2432664921245
+      },
+      "width": 260,
+      "height": 320,
+      "backgroundColor": "rgba(100, 100, 255, 0.1)",
+      "borderColor": "#bbbebf",
+      "borderWidth": 2,
+      "borderStyle": "dashed",
+      "borderRadius": 8,
+      "zIndex": -1
+    }
+  ],
+  "networkNodeAnnotations": [],
+  "nodeAnnotations": [
+    {
+      "id": "as1_h1",
+      "icon": "client",
+      "position": {
+        "x": -47.10417558881932,
+        "y": 204.9060022252899
+      },
+      "geoCoordinates": {
+        "lat": 48.684826888402256,
+        "lng": 9.007895390625677
+      },
+      "groupId": "group-3",
+      "iconColor": "#098807",
+      "iconCornerRadius": 0
+    },
+    {
+      "id": "as1_h2",
+      "icon": "client",
+      "position": {
+        "x": -47.10417558881932,
+        "y": 124.90600222528995
+      },
+      "geoCoordinates": {
+        "lat": 48.684826888402256,
+        "lng": 9.007895390625677
+      },
+      "groupId": "group-3",
+      "iconColor": "#098807",
+      "iconCornerRadius": 0
+    },
+    {
+      "id": "as1_r1",
+      "icon": "router",
+      "position": {
+        "x": 152.89582441118057,
+        "y": 124.90600222528995
+      },
+      "geoCoordinates": {
+        "lat": 48.684826888402256,
+        "lng": 9.007895390625677
+      },
+      "groupId": "group-3"
+    },
+    {
+      "id": "as1_r2",
+      "icon": "router",
+      "position": {
+        "x": 152.89582441118057,
+        "y": 204.9060022252899
+      },
+      "geoCoordinates": {
+        "lat": 48.684826888402256,
+        "lng": 9.007895390625677
+      },
+      "groupId": "group-3"
+    },
+    {
+      "id": "as1_r3",
+      "icon": "router",
+      "position": {
+        "x": 92.89582441118068,
+        "y": 164.90600222528997
+      },
+      "geoCoordinates": {
+        "lat": 48.684826888402256,
+        "lng": 9.007895390625677
+      },
+      "groupId": "group-3"
+    },
+    {
+      "id": "as1_r4",
+      "icon": "router",
+      "position": {
+        "x": 32.89582441118068,
+        "y": 204.9060022252899
+      },
+      "geoCoordinates": {
+        "lat": 48.684826888402256,
+        "lng": 9.007895390625677
+      },
+      "groupId": "group-3"
+    },
+    {
+      "id": "as1_r5",
+      "icon": "router",
+      "position": {
+        "x": 32.89582441118068,
+        "y": 124.90600222528995
+      },
+      "geoCoordinates": {
+        "lat": 48.684826888402256,
+        "lng": 9.007895390625677
+      },
+      "groupId": "group-3"
+    },
+    {
+      "id": "as2_h1",
+      "icon": "client",
+      "position": {
+        "x": 460,
+        "y": 140
+      },
+      "geoCoordinates": {
+        "lat": 48.684826888402256,
+        "lng": 9.007895390625677
+      },
+      "groupId": "group-4",
+      "iconColor": "#098807",
+      "iconCornerRadius": 0
+    },
+    {
+      "id": "as2_r0",
+      "icon": "router",
+      "position": {
+        "x": 360.69830446129515,
+        "y": 136.00681893840613
+      },
+      "geoCoordinates": {
+        "lat": 48.684826888402256,
+        "lng": 9.007895390625677
+      },
+      "groupId": "group-4"
+    },
+    {
+      "id": "as3_h1",
+      "icon": "client",
+      "position": {
+        "x": 276.94273356623677,
+        "y": 389.9885108203278
+      },
+      "geoCoordinates": {
+        "lat": 48.684826888402256,
+        "lng": 9.007895390625677
+      },
+      "groupId": "group-6",
+      "iconColor": "#098807",
+      "iconCornerRadius": 0
+    },
+    {
+      "id": "as3_r0",
+      "icon": "router",
+      "position": {
+        "x": 216.94273356623677,
+        "y": 389.9885108203278
+      },
+      "geoCoordinates": {
+        "lat": 48.684826888402256,
+        "lng": 9.007895390625677
+      },
+      "groupId": "group-6"
+    },
+    {
+      "id": "as4_h1",
+      "icon": "client",
+      "position": {
+        "x": 543.7493869142303,
+        "y": 313.70084891482253
+      },
+      "geoCoordinates": {
+        "lat": 48.684826888402256,
+        "lng": 9.007895390625677
+      },
+      "groupId": "group-7",
+      "iconColor": "#098807",
+      "iconCornerRadius": 0
+    },
+    {
+      "id": "as4_r0",
+      "icon": "router",
+      "position": {
+        "x": 443.7493869142303,
+        "y": 313.70084891482253
+      },
+      "geoCoordinates": {
+        "lat": 48.684826888402256,
+        "lng": 9.007895390625677
+      },
+      "groupId": "group-7"
+    },
+    {
+      "id": "as5_h1",
+      "icon": "client",
+      "position": {
+        "x": 16.44729324416096,
+        "y": -70.84228995575228
+      },
+      "geoCoordinates": {
+        "lat": 48.684826888402256,
+        "lng": 9.007895390625677
+      },
+      "groupId": "group-1",
+      "iconColor": "#098807",
+      "iconCornerRadius": 0
+    },
+    {
+      "id": "as5_r0",
+      "icon": "router",
+      "position": {
+        "x": 94.11052356639752,
+        "y": -29.284443503909998
+      },
+      "geoCoordinates": {
+        "lat": 48.684826888402284,
+        "lng": 9.107895390625673
+      },
+      "groupId": "group-1"
+    },
+    {
+      "id": "as6_h1",
+      "icon": "client",
+      "position": {
+        "x": 424.49874038386156,
+        "y": -50.57316924153545
+      },
+      "geoCoordinates": {
+        "lat": 48.684826888402256,
+        "lng": 9.007895390625677
+      },
+      "groupId": "group-2",
+      "iconColor": "#098807",
+      "iconCornerRadius": 0
+    },
+    {
+      "id": "as6_r0",
+      "icon": "router",
+      "position": {
+        "x": 334.79874387408955,
+        "y": -54.56351715254927
+      },
+      "geoCoordinates": {
+        "lat": 48.684826888402256,
+        "lng": 9.007895390625677
+      },
+      "groupId": "group-2"
+    },
+    {
+      "id": "as7_h1",
+      "icon": "client",
+      "position": {
+        "x": -64.4897324535916,
+        "y": 376.7530079854656
+      },
+      "geoCoordinates": {
+        "lat": 48.684826888402256,
+        "lng": 9.007895390625677
+      },
+      "groupId": "group-5",
+      "iconColor": "#098807",
+      "iconCornerRadius": 0
+    },
+    {
+      "id": "as7_r0",
+      "icon": "router",
+      "position": {
+        "x": 15.5102675464084,
+        "y": 376.7530079854656
+      },
+      "geoCoordinates": {
+        "lat": 48.684826888402256,
+        "lng": 9.007895390625677
+      },
+      "groupId": "group-5"
+    },
+    {
+      "id": "as8_h1",
+      "icon": "client",
+      "position": {
+        "x": 395.248671553083,
+        "y": 553.4752196452656
+      },
+      "geoCoordinates": {
+        "lat": 48.684826888402256,
+        "lng": 9.007895390625677
+      },
+      "groupId": "group-8",
+      "iconColor": "#098807",
+      "iconCornerRadius": 0
+    },
+    {
+      "id": "as8_r0",
+      "icon": "router",
+      "position": {
+        "x": 315.248671553083,
+        "y": 553.4752196452656
+      },
+      "geoCoordinates": {
+        "lat": 48.684826888402256,
+        "lng": 9.007895390625677
+      },
+      "groupId": "group-8"
+    },
+    {
+      "id": "as9_h1",
+      "icon": "client",
+      "position": {
+        "x": 40,
+        "y": 560
+      },
+      "geoCoordinates": {
+        "lat": 48.684826888402256,
+        "lng": 9.007895390625677
+      },
+      "groupId": "group-9",
+      "iconColor": "#098807",
+      "iconCornerRadius": 0
+    },
+    {
+      "id": "as9_r0",
+      "icon": "router",
+      "position": {
+        "x": 123.50820158020244,
+        "y": 553.8075689571692
+      },
+      "geoCoordinates": {
+        "lat": 48.684826888402256,
+        "lng": 9.007895390625677
+      },
+      "groupId": "group-9"
+    },
+    {
+      "id": "as100_r3",
+      "position": {
+        "x": 172.68674089070714,
+        "y": 721.1828528658793
+      },
+      "icon": "pe",
+      "interfacePattern": "eth{n}",
+      "groupId": "group-11"
+    },
+    {
+      "id": "as100_r1",
+      "position": {
+        "x": -149.4211017218026,
+        "y": 682.065826291352
+      },
+      "icon": "pe",
+      "interfacePattern": "eth{n}",
+      "groupId": "group-10"
+    },
+    {
+      "id": "as100_r2",
+      "position": {
+        "x": 52.68674089070724,
+        "y": 721.1828528658793
+      },
+      "icon": "pe",
+      "interfacePattern": "eth{n}",
+      "groupId": "group-11"
+    },
+    {
+      "id": "as100_sw1",
+      "position": {
+        "x": -169.4211017218026,
+        "y": 782.065826291352
+      },
+      "icon": "switch",
+      "interfacePattern": "eth{n}",
+      "groupId": "group-10"
+    },
+    {
+      "id": "as100_sw2",
+      "position": {
+        "x": 61.843084738896295,
+        "y": 837.1164818089501
+      },
+      "icon": "switch",
+      "interfacePattern": "eth{n}",
+      "groupId": "group-11"
+    },
+    {
+      "id": "as100_h4",
+      "position": {
+        "x": -249.4211017218026,
+        "y": 742.065826291352
+      },
+      "icon": "client",
+      "iconColor": "#098807",
+      "iconCornerRadius": 0,
+      "groupId": "group-10"
+    },
+    {
+      "id": "as100_h3",
+      "position": {
+        "x": -249.4211017218026,
+        "y": 822.065826291352
+      },
+      "icon": "client",
+      "iconColor": "#098807",
+      "iconCornerRadius": 0,
+      "groupId": "group-10"
+    },
+    {
+      "id": "as100_h2",
+      "position": {
+        "x": 180,
+        "y": 880
+      },
+      "icon": "client",
+      "iconColor": "#098807",
+      "iconCornerRadius": 0,
+      "groupId": "group-11"
+    },
+    {
+      "id": "as100_h1",
+      "position": {
+        "x": 180,
+        "y": 800
+      },
+      "label": "as100_bridge0",
+      "icon": "client",
+      "iconColor": "#098807",
+      "iconCornerRadius": 0,
+      "groupId": "group-11"
+    },
+    {
+      "id": "as100_bridge1",
+      "position": {
+        "x": -160,
+        "y": 720
+      },
+      "label": "as100_bridge1"
+    },
+    {
+      "id": "host4",
+      "position": {
+        "x": 80,
+        "y": 920
+      },
+      "icon": "client",
+      "interfacePattern": "eth{n}",
+      "iconColor": "#098807",
+      "iconCornerRadius": 0
+    },
+    {
+      "id": "host5",
+      "position": {
+        "x": -20,
+        "y": 920
+      },
+      "icon": "client",
+      "iconColor": "#098807",
+      "interfacePattern": "eth{n}",
+      "iconCornerRadius": 0
+    },
+    {
+      "id": "host6",
+      "position": {
+        "x": -240,
+        "y": 800
+      },
+      "icon": "client",
+      "iconColor": "#098807",
+      "interfacePattern": "eth{n}",
+      "iconCornerRadius": 0
+    },
+    {
+      "id": "host7",
+      "position": {
+        "x": -260,
+        "y": 700
+      },
+      "icon": "client",
+      "iconColor": "#098807",
+      "interfacePattern": "eth{n}",
+      "iconCornerRadius": 0
+    }
+  ],
+  "edgeAnnotations": [],
+  "aliasEndpointAnnotations": [],
+  "viewerSettings": {},
+  "cloudNodeAnnotations": []
+}

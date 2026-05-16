@@ -1,0 +1,161 @@
+---
+as100_h1:
+    username: 
+    password: 
+    platform: linux
+    hostname: 172.20.20.24
+as100_h2:
+    username: 
+    password: 
+    platform: linux
+    hostname: 172.20.20.26
+as100_h3:
+    username: 
+    password: 
+    platform: linux
+    hostname: 172.20.20.10
+as100_h4:
+    username: 
+    password: 
+    platform: linux
+    hostname: 172.20.20.7
+as100_r1:
+    username: 
+    password: 
+    platform: linux
+    hostname: 172.20.20.23
+as100_r2:
+    username: 
+    password: 
+    platform: linux
+    hostname: 172.20.20.2
+as100_r3:
+    username: 
+    password: 
+    platform: linux
+    hostname: 172.20.20.11
+as100_sw1:
+    username: 
+    password: 
+    platform: linux
+    hostname: 172.20.20.12
+as100_sw2:
+    username: 
+    password: 
+    platform: linux
+    hostname: 172.20.20.13
+as1_h1:
+    username: 
+    password: 
+    platform: linux
+    hostname: 172.20.20.25
+as1_h2:
+    username: 
+    password: 
+    platform: linux
+    hostname: 172.20.20.18
+as1_r1:
+    username: 
+    password: 
+    platform: linux
+    hostname: 172.20.20.16
+as1_r2:
+    username: 
+    password: 
+    platform: linux
+    hostname: 172.20.20.31
+as1_r3:
+    username: 
+    password: 
+    platform: linux
+    hostname: 172.20.20.9
+as1_r4:
+    username: 
+    password: 
+    platform: linux
+    hostname: 172.20.20.22
+as1_r5:
+    username: 
+    password: 
+    platform: linux
+    hostname: 172.20.20.28
+as2_h1:
+    username: 
+    password: 
+    platform: linux
+    hostname: 172.20.20.6
+as2_r0:
+    username: 
+    password: 
+    platform: linux
+    hostname: 172.20.20.5
+as3_h1:
+    username: 
+    password: 
+    platform: linux
+    hostname: 172.20.20.30
+as3_r0:
+    username: 
+    password: 
+    platform: linux
+    hostname: 172.20.20.3
+as4_h1:
+    username: 
+    password: 
+    platform: linux
+    hostname: 172.20.20.14
+as4_r0:
+    username: 
+    password: 
+    platform: linux
+    hostname: 172.20.20.27
+as5_h1:
+    username: 
+    password: 
+    platform: linux
+    hostname: 172.20.20.19
+as5_r0:
+    username: 
+    password: 
+    platform: linux
+    hostname: 172.20.20.32
+as6_h1:
+    username: 
+    password: 
+    platform: linux
+    hostname: 172.20.20.20
+as6_r0:
+    username: 
+    password: 
+    platform: linux
+    hostname: 172.20.20.8
+as7_h1:
+    username: 
+    password: 
+    platform: linux
+    hostname: 172.20.20.33
+as7_r0:
+    username: 
+    password: 
+    platform: linux
+    hostname: 172.20.20.15
+as8_h1:
+    username: 
+    password: 
+    platform: linux
+    hostname: 172.20.20.29
+as8_r0:
+    username: 
+    password: 
+    platform: linux
+    hostname: 172.20.20.17
+as9_h1:
+    username: 
+    password: 
+    platform: linux
+    hostname: 172.20.20.21
+as9_r0:
+    username: 
+    password: 
+    platform: linux
+    hostname: 172.20.20.4

@@ -1,0 +1,120 @@
+frr version 10.4.1_git
+frr defaults traditional
+hostname as1_r1
+!
+ip prefix-list AS1_networks description My AS1 Networks
+ip prefix-list AS1_networks seq 5 permit 101.0.0.0/24
+ip prefix-list AS1_networks seq 10 permit 101.1.0.0/16 le 24
+ip prefix-list AS1_networks seq 15 permit 201.0.0.0/15 le 24
+ip prefix-list AS1_transit_networks description Networks for Transit
+!
+ipv6 prefix-list AS1_networks_v6 description description My AS1 IPv6 Networks
+ipv6 prefix-list AS1_networks_v6 seq 5 permit 2000:1111::/32
+!
+route-map peers_out permit 10
+ match ip address prefix-list AS1_networks
+ set community 1:100 additive
+ set metric 10
+exit
+!
+route-map peers_out permit 15
+ match ipv6 address prefix-list AS1_networks_v6
+ set community 1:100 additive
+ set metric 10
+exit
+!
+route-map peers_out permit 20
+ match ip address prefix-list AS1_transit_networks
+exit
+!
+route-map peers_out deny 999
+exit
+!
+route-map peers_in permit 10
+exit
+!
+interface eth1
+ description connection to AS1-R2
+ ip address 101.1.1.1/30
+ ip ospf area 0
+ ipv6 address 2000:1111:1:102::1/64
+ ipv6 ospf6 area 0
+exit
+!
+interface eth2
+ description connection to AS1-R3
+ ip address 101.1.1.5/30
+ ip ospf area 0
+ ipv6 address 2000:1111:1:103::1/64
+ ipv6 ospf6 area 0
+exit
+!
+interface eth3
+ description connection to AS2
+ ip address 101.1.0.1/30
+exit
+!
+interface eth4
+ description to AS5
+ ip address 101.1.1.25/30
+exit
+!
+interface lo
+ description AS1 R1 Loopback
+ ip address 101.0.0.1/32
+ ip ospf area 0
+ ip ospf passive
+ ipv6 address 2000:1111:1::1/128
+ ipv6 ospf6 area 0
+ ipv6 ospf6 passive
+exit
+!
+router bgp 1
+ bgp router-id 101.0.0.1
+ bgp log-neighbor-changes
+ neighbor ibgp peer-group
+ neighbor ibgp remote-as 1
+ neighbor ibgp update-source lo
+ neighbor 101.0.0.2 peer-group ibgp
+ neighbor 101.0.0.2 description R2
+ neighbor 101.0.0.3 peer-group ibgp
+ neighbor 101.0.0.3 description R3
+ neighbor 101.1.0.2 remote-as 2
+ neighbor 101.1.0.2 description AS2
+ neighbor 101.1.1.26 remote-as 5
+ neighbor 101.1.1.26 description AS5
+ !
+ address-family ipv4 unicast
+  neighbor ibgp next-hop-self
+  neighbor 101.1.0.2 next-hop-self
+  neighbor 101.1.0.2 route-map peers_in in
+  neighbor 101.1.0.2 route-map peers_out out
+  neighbor 101.1.1.26 next-hop-self
+  neighbor 101.1.1.26 route-map peers_in in
+  neighbor 101.1.1.26 route-map peers_out out
+ exit-address-family
+ !
+ address-family ipv6 unicast
+  neighbor ibgp activate
+  neighbor ibgp next-hop-self
+  neighbor 101.1.0.2 activate
+  neighbor 101.1.0.2 next-hop-self
+  neighbor 101.1.0.2 route-map peers_in in
+  neighbor 101.1.0.2 route-map peers_out out
+  neighbor 101.1.1.26 activate
+  neighbor 101.1.1.26 next-hop-self
+  neighbor 101.1.1.26 route-map peers_in in
+  neighbor 101.1.1.26 route-map peers_out out
+ exit-address-family
+exit
+!
+router ospf
+ ospf router-id 101.0.0.1
+ redistribute connected metric-type 1
+exit
+!
+router ospf6
+ ospf6 router-id 101.0.0.1
+ redistribute connected metric-type 1
+exit
+!
