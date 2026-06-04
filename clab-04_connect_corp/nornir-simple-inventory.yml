@@ -3,77 +3,77 @@ as100_h1:
     username: 
     password: 
     platform: linux
-    hostname: 172.20.20.24
+    hostname: 172.20.20.29
 as100_h2:
     username: 
     password: 
     platform: linux
-    hostname: 172.20.20.26
+    hostname: 172.20.20.10
 as100_h3:
     username: 
     password: 
     platform: linux
-    hostname: 172.20.20.10
+    hostname: 172.20.20.22
 as100_h4:
     username: 
     password: 
     platform: linux
-    hostname: 172.20.20.7
+    hostname: 172.20.20.33
 as100_r1:
     username: 
     password: 
     platform: linux
-    hostname: 172.20.20.23
+    hostname: 172.20.20.16
 as100_r2:
     username: 
     password: 
     platform: linux
-    hostname: 172.20.20.2
+    hostname: 172.20.20.26
 as100_r3:
     username: 
     password: 
     platform: linux
-    hostname: 172.20.20.11
+    hostname: 172.20.20.31
 as100_sw1:
     username: 
     password: 
     platform: linux
-    hostname: 172.20.20.12
+    hostname: 172.20.20.3
 as100_sw2:
     username: 
     password: 
     platform: linux
-    hostname: 172.20.20.13
+    hostname: 172.20.20.20
 as1_h1:
     username: 
     password: 
     platform: linux
-    hostname: 172.20.20.25
+    hostname: 172.20.20.24
 as1_h2:
     username: 
     password: 
     platform: linux
-    hostname: 172.20.20.18
+    hostname: 172.20.20.6
 as1_r1:
     username: 
     password: 
     platform: linux
-    hostname: 172.20.20.16
+    hostname: 172.20.20.27
 as1_r2:
     username: 
     password: 
     platform: linux
-    hostname: 172.20.20.31
+    hostname: 172.20.20.14
 as1_r3:
     username: 
     password: 
     platform: linux
-    hostname: 172.20.20.9
+    hostname: 172.20.20.8
 as1_r4:
     username: 
     password: 
     platform: linux
-    hostname: 172.20.20.22
+    hostname: 172.20.20.2
 as1_r5:
     username: 
     password: 
@@ -83,7 +83,7 @@ as2_h1:
     username: 
     password: 
     platform: linux
-    hostname: 172.20.20.6
+    hostname: 172.20.20.25
 as2_r0:
     username: 
     password: 
@@ -93,69 +93,69 @@ as3_h1:
     username: 
     password: 
     platform: linux
-    hostname: 172.20.20.30
+    hostname: 172.20.20.12
 as3_r0:
     username: 
     password: 
     platform: linux
-    hostname: 172.20.20.3
+    hostname: 172.20.20.11
 as4_h1:
     username: 
     password: 
     platform: linux
-    hostname: 172.20.20.14
+    hostname: 172.20.20.13
 as4_r0:
     username: 
     password: 
     platform: linux
-    hostname: 172.20.20.27
+    hostname: 172.20.20.4
 as5_h1:
     username: 
     password: 
     platform: linux
-    hostname: 172.20.20.19
+    hostname: 172.20.20.21
 as5_r0:
     username: 
     password: 
     platform: linux
-    hostname: 172.20.20.32
+    hostname: 172.20.20.23
 as6_h1:
     username: 
     password: 
     platform: linux
-    hostname: 172.20.20.20
+    hostname: 172.20.20.17
 as6_r0:
     username: 
     password: 
     platform: linux
-    hostname: 172.20.20.8
+    hostname: 172.20.20.18
 as7_h1:
     username: 
     password: 
     platform: linux
-    hostname: 172.20.20.33
+    hostname: 172.20.20.7
 as7_r0:
     username: 
     password: 
     platform: linux
-    hostname: 172.20.20.15
+    hostname: 172.20.20.9
 as8_h1:
     username: 
     password: 
     platform: linux
-    hostname: 172.20.20.29
+    hostname: 172.20.20.30
 as8_r0:
     username: 
     password: 
     platform: linux
-    hostname: 172.20.20.17
+    hostname: 172.20.20.19
 as9_h1:
     username: 
     password: 
     platform: linux
-    hostname: 172.20.20.21
+    hostname: 172.20.20.32
 as9_r0:
     username: 
     password: 
     platform: linux
-    hostname: 172.20.20.4
+    hostname: 172.20.20.15
