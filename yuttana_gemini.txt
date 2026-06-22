@@ -1,0 +1,84 @@
+====================================================================
+SESSION EXPORT LOG: 04_CONNECT_CORP TROUBLESHOOTING & CONFIGURATION
+====================================================================
+
+[OVERVIEW]
+Tasks Completed: Task 2 (Review), Task 3, Task 4
+Environment: Containerlab, FRRouting (FRR) 10.4.1
+
+--------------------------------------------------------------------
+[TASK 2 RECAP]: BGP & OSPF BASELINE
+--------------------------------------------------------------------
+Goal: Replace static routes with OSPFv2/v3 and eBGP to AS9.
+Key Takeaways (Pre-established):
+- FRR 10.4.1 requires route-maps (pass_all) due to RFC 8212 default deny.
+- OSPFv3 requires a 32-bit IPv4 format router-id.
+- eBGP IPv6 transit requires 'neighbor [IP] activate' under address-family.
+Status: Verified and Passed.
+
+--------------------------------------------------------------------
+[TASK 3 LOG]: SATELLITE OFFICE EXPANSION
+--------------------------------------------------------------------
+Goal: Add 'as100_sat_r1' to the topology, connecting to 'as100_r1'.
+
+[Issue 1: Containerlab Deploy Failure]
+- Action: User ran 'clab deploy -t topology.yaml --reconfigure'.
+- Error: "Failed to fetch http(s) resource: https://topology.yaml"
+- Cause: The file was actually named '04_connect_corp.clab.yaml'. Containerlab attempted to fetch 'topology.yaml' from the internet.
+- Fix: User adjusted the command to target '04_connect_corp.clab.yaml'.
+
+[Issue 2: Bind Path Error]
+- Action: User ran the corrected deploy command.
+- Error: "Failed to verify bind path: ... config/as100_sat_r1: no such file or directory"
+- Cause: The configuration directory for the new node did not exist on the host.
+- Fix: Executed 'mkdir -p config/as100_sat_r1' prior to deployment.
+
+[Issue 3: FRR Daemon Crash]
+- Action: User executed deploy after creating the directory.
+- Error: container "clab-04_connect_corp-as100_sat_r1" exited; "/etc/frr/daemons does not exist"
+- Cause: The bind-mounted directory was completely empty, causing FRR to fail on startup.
+- Fix: Instructed user to copy baseline configuration using 'cp ./config/as100_r1/* ./config/as100_sat_r1/'.
+
+[Issue 4: The IP Duplication Mistake (AI Error)]
+- Action: User copied files and applied new configuration.
+- Result: IPv6 ping succeeded, but IPv4 ping to ISP failed (100% loss).
+- Cause: The AI's instruction to copy r1's files carried over legacy IP configurations. The sat_r1 router had overlapping IPs (e.g., 209.1.2.1) resulting in a corrupted OSPF routing table.
+- Fix: AI provided a direct overwrite script (cat << 'EOF' > ... frr.conf) to wipe garbage configurations and apply clean settings.
+
+[Issue 5: File Permission Denied]
+- Action: User attempted to edit 'frr.conf' in a host text editor.
+- Error: "NoPermissions (FileSystemError)"
+- Cause: Containerlab generated the files with 'root' ownership, blocking the standard user.
+- Fix: Executed 'sudo chown -R $USER:$USER ~/Documents/04_connect_corp/config/'.
+- Final Resolution: Clean configuration applied. ICMP reachability to 109.1.0.1 and 201.0.0.2 verified. Task 3 Complete.
+
+--------------------------------------------------------------------
+[TASK 4 LOG]: MIGRATION TO IS-IS
+--------------------------------------------------------------------
+Goal: Replace OSPFv2/v3 with IS-IS routing protocol across AS100.
+
+[Action 1: Enable IS-IS Daemon]
+- Executed 'sed' to change 'isisd=no' to 'isisd=yes' in all AS100 daemon files, followed by container restarts.
+
+[Issue 6: Missing Default Route Parameter]
+- Action: Configured IS-IS on the border router (as100_r3).
+- Error: "% Command incomplete: default-information originate ipv4"
+- Cause: Unlike OSPF, IS-IS requires explicit level definition when originating default routes.
+- Fix: Corrected command to 'default-information originate ipv4 level-1 always' and 'ipv6 level-1 always'.
+
+[Action 2: Apply and Verify]
+- IS-IS Level-1 configured on r1, r2, r3, and sat_r1. OSPF blocks removed.
+- Verified adjacencies ('show isis neighbor' returning Up state).
+- Verified routing table ('show ip route isis') showing 'I' routes properly populated.
+- Global ICMP reachability verified.
+
+[Issue 7: Git Commit Permission Denied]
+- Action: User attempted 'git add .' to commit Task 4.
+- Error: "open(config/as100_r1/frr.conf): Permission denied"
+- Cause: Executing 'write memory' inside vtysh changes the file owner back to root on the host OS.
+- Fix: Executed 'sudo chown -R $USER:$USER ./config/' before staging files.
+- Final Resolution: Git commit and push successful. Task 4 Complete.
+
+===================================================================================================================
+(full version https://docs.google.com/document/d/1EBMzK3j50MtM2gwO6r43_v6et-LWa7dPpp90c2WefQU/edit?usp=sharing  )
+====================================================================================================================

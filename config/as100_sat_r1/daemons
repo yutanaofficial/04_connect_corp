@@ -17,8 +17,8 @@
 bgpd=yes
 ospfd=yes
 ospf6d=yes
-ripd=yes
-ripngd=yes
+ripd=no
+ripngd=no
 isisd=yes
 pimd=no
 ldpd=no
